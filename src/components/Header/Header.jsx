@@ -13,7 +13,7 @@ export default function Header() {
       <div className={styles.header__badges}>
         <HeaderBadge icon={<BsBox2Heart />} title={'Полная комплектация'}/>
         <HeaderBadge icon={<IoMdCheckboxOutline />} title={'100% оригинал'}/>
-        <HeaderBadge icon={<FaRegStar />} title={'Товар прямо с завода'}/>
+        <HeaderBadge icon={<FaRegStar />} title={'Бесплатная доставка'}/>
       </div>
     </header>
   );
