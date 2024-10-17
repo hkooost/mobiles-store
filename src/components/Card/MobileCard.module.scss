@@ -1,0 +1,48 @@
+.card {
+  width: 200px;
+  height: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+  div {
+    position: relative;
+    width: 100%;
+    height: 35%;
+  }
+  &__img {
+    width: 150px;
+  }
+  &__title {
+    margin-top: 10px;
+    color: #FFF;
+  }
+  &__model {
+    color: #FFF;
+  }
+  &__price {
+    position: absolute;
+    color: #FFF;
+    bottom: 0;
+    font-size: 2rem;
+  }
+  &__buy {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    font-size: 1.2rem;
+    position: absolute;
+    margin: 10px;
+    bottom: 0;
+    cursor: pointer;
+    transition: .1s;
+    &:active {
+      transform: scale(.95);
+    }
+  }
+}

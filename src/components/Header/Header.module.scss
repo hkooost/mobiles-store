@@ -1,0 +1,34 @@
+.header {
+  background-color: rgba($color: #000000, $alpha: .8);
+  width: 100%;
+  height: 100vh;
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &__title {
+    color: #FFF;
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  &__desc {
+    color: #FFF;
+    font-size: 2rem;
+  }
+  &__badges {
+    display: inherit;
+    gap: 30px;
+    color: #FFF;
+    margin-top: 50px;
+    div {
+      user-select: none;
+      padding: 10px;
+      border: 2px solid white;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      display: inherit;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}

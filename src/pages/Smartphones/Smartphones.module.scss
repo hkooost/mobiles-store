@@ -1,0 +1,32 @@
+.mobiles {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__options {
+    display: inherit;
+    justify-content: end;
+    margin: 10px 230px;
+    padding: 10px 0;
+  }
+  &__sort {
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    gap: 10px;
+    font-size: 1.2rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-self: center;
+    gap: 50px;
+  }
+}
+.sort {
+  background-color: #000;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,16 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #FFF;
+  z-index: 1030;
+  background-color: #000000a6;
+  backdrop-filter: blur(10px);
+  a {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-transform: capitalize;
+  }
+}
