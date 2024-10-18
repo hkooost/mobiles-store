@@ -8,7 +8,7 @@ import { mobileData } from "../../data";
 export default function Smartphones() {
   const [mobiles, setMobiles] = useState(mobileData);
 
-  function handlePriceSort(e) {
+  function handleSort(e) {
     e.stopPropagation();
     if (e.target.value === "priceUp") {
       setMobiles([
@@ -22,6 +22,18 @@ export default function Smartphones() {
           return b.price - a.price;
         }),
       ]);
+    } else if (e.target.value === "nameAZ") {
+      setMobiles([
+        ...mobiles.sort((a, b) => {
+          return a.brand.localeCompare(b.brand);
+        }),
+      ]);
+    } else if (e.target.value === "nameZA") {
+      setMobiles([
+        ...mobiles.sort((a, b) => {
+          return b.brand.localeCompare(a.brand);
+        }),
+      ]);
     }
   }
 
@@ -31,7 +43,13 @@ export default function Smartphones() {
       <div className={styles.mobiles}>
         <div className={styles.mobiles__options}>
           <div className={styles.mobiles__sort}> Сортировать:
-            <select className={styles.sort} onChange={handlePriceSort}>
+            <select className={styles.sort} onChange={handleSort}>
+              <option value="nameAZ">
+                По названию A-Z
+              </option>
+              <option value="nameZA">
+                По названию Z-A
+              </option>
               <option value="priceUp">
                 По возрастанию
               </option>
