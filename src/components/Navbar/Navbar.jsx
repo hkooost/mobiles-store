@@ -7,7 +7,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <Link to='/'>главная</Link>
       <Link to='/smartphones'>смартфоны</Link>
-      <Link to='/about'>о нас</Link>
+      <Link to='/'>о нас</Link>
     </nav>
   );
 };
